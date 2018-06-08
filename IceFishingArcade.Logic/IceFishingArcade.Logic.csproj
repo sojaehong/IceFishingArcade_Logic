@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F529E186-83C1-4376-8016-4F9A3E03BBDF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IceFishingArcade.Logic</RootNamespace>
+    <AssemblyName>IceFishingArcade.Logic</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Aquarium.cs" />
+    <Compile Include="Bear.cs" />
+    <Compile Include="FishBuilders\CarpBuilder.cs" />
+    <Compile Include="FishBuilders\DolphinBuilder.cs" />
+    <Compile Include="FishBuilders\FishBuilder.cs" />
+    <Compile Include="FishBuilders\FlatfishBuilder.cs" />
+    <Compile Include="FishBuilders\GoldfishBuilder.cs" />
+    <Compile Include="FishBuilders\RockfishBuilder.cs" />
+    <Compile Include="FishBuilders\SalmonBuilder.cs" />
+    <Compile Include="FishBuilders\SeaBreamBuilder.cs" />
+    <Compile Include="FishBuilders\SeaTurtleBuilder.cs" />
+    <Compile Include="FishBuilders\SquidBuilder.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="Fish.cs" />
+    <Compile Include="FishBuilders\SunfishBuilder.cs" />
+    <Compile Include="FishFactory.cs" />
+    <Compile Include="Item.cs" />
+    <Compile Include="Player.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
